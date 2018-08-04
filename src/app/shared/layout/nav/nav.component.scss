@@ -1,0 +1,71 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+}
+
+// $primary-color-dark:   #388E3C;
+// $primary-color:        #4CAF50;
+// $primary-color-light:  #C8E6C9;
+// $primary-color-text:   #FFFFFF;
+// $accent-color:         #FF9800;
+// $primary-text-color:   #212121;
+// $secondary-text-color: #757575;
+// $divider-color:        #BDBDBD;
+a.mat-list-item.mat-list-item-active,
+a.mat-list-item-active,
+a.mat-list-item .mat-list-item-active,
+a.mat-list-item .mat-list-item-active.mat-list-item-focus,
+  {
+  background: #ef6c00, ;
+  color: #ffffff;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  border-radius: 4px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+.mat-list,
+.mat-nav-list,
+.mat-selection-list {
+    padding: 4px;
+}
+
+.header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+mat-card.card-avatar.mat-card {
+  padding: 10px;
+}
+
+mat-card.avtar-card.mat-card {
+  padding: 14px;
+}
+.mat-card>.mat-card-actions.avtar-action:last-child{
+    margin-bottom: -10px;
+}
+mat-card-actions.avtar-action.mat-card-actions {
+    margin-left: -14px;
+    margin-right: -22px;
+    padding: 0 0;
+    button.mat-button{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+mat-icon.breadcrumb-icon.mat-icon.material-icons {
+    position: absolute;
+}

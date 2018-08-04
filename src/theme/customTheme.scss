@@ -1,0 +1,100 @@
+@import '../../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+$primary-color-dark:   #388E3C;
+$primary-color:        #4CAF50;
+$primary-color-light:  #C8E6C9;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #FF9800;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+$primary-color: (
+    50 : #e8f5e9,
+    100 : #c8e6c9,
+    200 : #a5d6a7,
+    300 : #81c784,
+    400 : #66bb6a,
+    500 : #4caf50,
+    600 : #43a047,
+    700 : #388e3c,
+    800 : #2e7d32,
+    900 : #1b5e20,
+    A100 : #b9f6ca,
+    A200 : #69f0ae,
+    A400 : #00e676,
+    A700 : #00c853,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+$accent-color : (
+  
+50 : #fff3e0,
+100 : #ffe0b2,
+200 : #ffcc80,
+300 : #ffb74d,
+400 : #ffa726,
+500 : #ff9800,
+600 : #fb8c00,
+700 : #f57c00,
+800 : #ef6c00,
+900 : #e65100,
+A100 : #ffd180,
+A200 : #ffab40,
+A400 : #ff9100,
+A700 : #ff6d00,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white
+  )
+);
+
+
+@function my-mat-light-theme-foreground($color) {
+    @return (
+        base:              $color,
+        divider:           $black-12-opacity,
+        dividers:          $black-12-opacity,
+        disabled:          rgba($color, 0.38),
+        disabled-button:   rgba($color, 0.38),
+        disabled-text:     rgba($color, 0.38),
+        hint-text:         rgba($color, 0.38),
+        secondary-text:    rgba($color, 0.54),
+        icon:              rgba($color, 0.54),
+        icons:             rgba($color, 0.54),
+        text:              rgba($color, 0.74),
+        slider-off:        rgba($color, 0.26),
+        slider-off-active: rgba($color, 0.38),
+        slider-min:        rgba($color, 0.26),
+    );
+};
+
+$my-foreground: my-mat-light-theme-foreground(mat-color($primary-color, 800));
